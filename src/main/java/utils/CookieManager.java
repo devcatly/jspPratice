@@ -1,7 +1,6 @@
 package utils;
 
 import java.io.PrintWriter;
-
 import jakarta.servlet.http.Cookie;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
@@ -24,8 +23,7 @@ public class CookieManager {
     		for(Cookie c : cookies) {
     			String cookieNmae = c.getName();
     			if(cookieNmae.equals(cName)) {
-    				cookieValue = c.getValue();
-    			}
+    				cookieValue = c.getValue();			   			}
     		}
     	}
     	return cookieValue;
