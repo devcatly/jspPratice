@@ -22,10 +22,8 @@ BoardDAO dao = new BoardDAO(application);
 
 // 더미 데이터를 삽입하기 위한 코드
 int iResult = 0;
-for (int i = 1; i <= 100; i++) {
-    dto.setTitle(title + "-" + i); 
-    iResult = dao.insertWrite(dto);
-} 
+
+iResult = dao.insertWrite(dto);
 
 dao.close();
 
@@ -33,6 +31,6 @@ dao.close();
 if (iResult == 1) {
     response.sendRedirect("List.jsp");
 } else {
-    JSFunction.alertBack("글쓰기에 실패하였습니다.", out);
+    JsFunction.alertBack("글쓰기에 실패하였습니다.", out);
 }
 %>

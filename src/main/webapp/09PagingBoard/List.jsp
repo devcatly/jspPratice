@@ -52,7 +52,7 @@ dao.close();  // DB 연결 닫기
 <body>
     <jsp:include page="../Common/Link.jsp" />  <!-- 공통 링크 -->
 
-    <h2>목록 보기(List) - 현재 페이지 : <%= pageNum %> (전체 : <%= totalPage %>)</h2>
+    <h2>게시판</h2>
     <!-- 검색폼 -->
     <form method="get">
     <table border="1" width="90%">

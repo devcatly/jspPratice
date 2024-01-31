@@ -27,6 +27,6 @@ if (affected == 1) {
 }
 else {
     // 실패 시 이전 페이지로 이동
-    JSFunction.alertBack("수정하기에 실패하였습니다.", out);
+    JsFunction.alertBack("수정하기에 실패하였습니다.", out);
 }
 %>
